@@ -9,9 +9,7 @@ on:
       - master
 jobs:
   build:
-    runs-on: [ self-hosted, linux]
-    container:
-      image: my-react-app:latest # Use custom base image
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout Repository
